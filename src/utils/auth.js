@@ -6,19 +6,22 @@ export function signAuthToken(payload) {
   return jwt.sign(payload, env.jwtSecret, { expiresIn: env.jwtExpiresIn })
 }
 
-export function setAuthCookie(res, token) {
-  res.cookie('token', token, {
+function getCookieOptions() {
+  const isProduction = env.nodeEnv === 'production'
+
+  return {
     httpOnly: true,
-    secure: env.nodeEnv === 'production',
-    sameSite: 'lax',
+    secure: isProduction,
+    sameSite: isProduction ? 'none' : 'lax',
     maxAge: 7 * 24 * 60 * 60 * 1000,
-  })
+  }
+}
+
+export function setAuthCookie(res, token) {
+  res.cookie('token', token, getCookieOptions())
 }
 
 export function clearAuthCookie(res) {
-  res.clearCookie('token', {
-    httpOnly: true,
-    secure: env.nodeEnv === 'production',
-    sameSite: 'lax',
-  })
+  const { maxAge: _maxAge, ...cookieOptions } = getCookieOptions()
+  res.clearCookie('token', cookieOptions)
 }

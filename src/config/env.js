@@ -10,10 +10,14 @@ for (const key of requiredKeys) {
   }
 }
 
+function normalizeOrigin(origin) {
+  return origin.replace(/\/+$/, '')
+}
+
 export const env = {
   nodeEnv: process.env.NODE_ENV ?? 'development',
   port: Number(process.env.PORT ?? 5000),
-  frontendUrl: process.env.FRONTEND_URL ?? 'https://energion-emobility.netlify.app/',
+  frontendUrl: normalizeOrigin(process.env.FRONTEND_URL ?? 'https://energion-emobility.netlify.app'),
   dbUser: process.env.DB_USER,
   dbPass: process.env.DB_PASS,
   dbName: process.env.DB_NAME ?? 'energion',
