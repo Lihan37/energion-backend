@@ -22,10 +22,22 @@ function parseOrigins(value) {
     .map(normalizeOrigin)
 }
 
-const frontendUrls = parseOrigins(
-  process.env.FRONTEND_URLS ??
-    process.env.FRONTEND_URL ??
-    'https://energion-emobility.netlify.app',
+// Origins that must always be allowed, regardless of the deployment's env vars,
+// so a stale FRONTEND_URL can never lock the live site out via CORS.
+const BASE_ALLOWED_ORIGINS = [
+  'https://energion-emobility.com',
+  'https://www.energion-emobility.com',
+  'https://energion-emobility.netlify.app',
+  'http://localhost:5173',
+  'http://localhost:4173',
+]
+
+const envOrigins = parseOrigins(
+  process.env.FRONTEND_URLS ?? process.env.FRONTEND_URL ?? '',
+)
+
+const frontendUrls = Array.from(
+  new Set([...BASE_ALLOWED_ORIGINS.map(normalizeOrigin), ...envOrigins]),
 )
 
 export const env = {
