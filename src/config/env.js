@@ -10,6 +10,28 @@ for (const key of requiredKeys) {
   }
 }
 
+// Refuse to boot with a weak or placeholder JWT secret: a guessable secret lets
+// anyone forge auth tokens, so require a real, sufficiently long random value.
+const PLACEHOLDER_JWT_SECRETS = new Set([
+  'change-this-to-a-long-random-secret',
+  'your-secret',
+  'secret',
+  'changeme',
+])
+
+const jwtSecret = process.env.JWT_SECRET
+
+if (PLACEHOLDER_JWT_SECRETS.has(jwtSecret)) {
+  throw new Error(
+    'JWT_SECRET is still set to a placeholder value. Set it to a long random string ' +
+      '(e.g. `node -e "console.log(require(\'crypto\').randomBytes(48).toString(\'base64url\'))"`).',
+  )
+}
+
+if (jwtSecret.length < 32) {
+  throw new Error('JWT_SECRET must be at least 32 characters long.')
+}
+
 function normalizeOrigin(origin) {
   return origin.replace(/\/+$/, '')
 }
@@ -51,7 +73,7 @@ export const env = {
   dbUriTemplate:
     process.env.DB_URI ??
     'mongodb+srv://<db_username>:<db_password>@cluster0.g9xsrko.mongodb.net/?appName=Cluster0',
-  jwtSecret: process.env.JWT_SECRET,
+  jwtSecret,
   jwtExpiresIn: process.env.JWT_EXPIRES_IN ?? '7d',
   adminPhones: (process.env.ADMIN_PHONES ?? '01716285196')
     .split(',')
