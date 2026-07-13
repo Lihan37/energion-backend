@@ -56,7 +56,7 @@ router.post('/signup', asyncHandler(async (req, res) => {
   const insertedUser = { ...newUser, _id: result.insertedId }
   const token = signAuthToken({ sub: result.insertedId.toString(), role })
 
-  setAuthCookie(res, token)
+  setAuthCookie(req, res, token)
 
   return res.status(201).json({
     message: 'Account created successfully.',
@@ -86,7 +86,7 @@ router.post('/login', asyncHandler(async (req, res) => {
   }
 
   const token = signAuthToken({ sub: user._id.toString(), role: user.role })
-  setAuthCookie(res, token)
+  setAuthCookie(req, res, token)
 
   return res.json({
     message: 'Logged in successfully.',
@@ -94,8 +94,8 @@ router.post('/login', asyncHandler(async (req, res) => {
   })
 }))
 
-router.post('/logout', (_req, res) => {
-  clearAuthCookie(res)
+router.post('/logout', (req, res) => {
+  clearAuthCookie(req, res)
   return res.json({ message: 'Logged out successfully.' })
 })
 

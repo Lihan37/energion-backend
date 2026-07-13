@@ -14,6 +14,10 @@ import productsRoutes from './routes/products.routes.js'
 
 const app = express()
 
+// Railway terminates TLS at its edge proxy, so trust the first hop; this lets
+// req.secure reflect the real https protocol (needed for secure auth cookies).
+app.set('trust proxy', 1)
+
 const authLimiter = rateLimit({
   windowMs: 10 * 60 * 1000,
   max: 30,
