@@ -16,7 +16,9 @@ if (isCloudinaryConfigured) {
 
 export async function uploadImageBuffer(fileBuffer, folder = 'energion/products') {
   if (!isCloudinaryConfigured) {
-    throw new Error('Cloudinary is not configured. Add CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET.')
+    throw new Error(
+      'Cloudinary is not configured. Add CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET.',
+    )
   }
 
   return new Promise((resolve, reject) => {
@@ -42,10 +44,16 @@ export async function uploadImageBuffer(fileBuffer, folder = 'energion/products'
   })
 }
 
-export async function deleteImage(publicId) {
+export async function deleteImage(publicId, imageUrl = '') {
   if (!isCloudinaryConfigured || !publicId) {
     return
   }
 
-  await cloudinary.uploader.destroy(publicId, { resource_type: 'image' })
+  // Old-account assets are not owned by the configured account.
+  if (imageUrl && !imageUrl.includes(`res.cloudinary.com/${env.cloudinaryCloudName}/`)) return
+  try {
+    await cloudinary.uploader.destroy(publicId, { resource_type: 'image' })
+  } catch {
+    console.warn('Image cleanup could not be completed; the product update was saved.')
+  }
 }

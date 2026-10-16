@@ -23,6 +23,8 @@ export function serializeProduct(product) {
     shortDescription: product.shortDescription,
     description: product.description,
     image: product.image,
+    images: product.images ?? [],
+    published: product.published !== false,
     featured: Boolean(product.featured),
     tag: product.tag ?? '',
     specs: product.specs ?? [],

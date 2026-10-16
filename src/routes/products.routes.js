@@ -6,14 +6,17 @@ import { serializeProduct } from '../utils/products.js'
 
 const router = Router()
 
-router.get('/', asyncHandler(async (_req, res) => {
-  const products = await getDb()
-    .collection('products')
-    .find({})
-    .sort({ featured: -1, createdAt: -1 })
-    .toArray()
+router.get(
+  '/',
+  asyncHandler(async (_req, res) => {
+    const products = await getDb()
+      .collection('products')
+      .find({ published: { $ne: false } })
+      .sort({ featured: -1, createdAt: -1 })
+      .toArray()
 
-  return res.json({ products: products.map(serializeProduct) })
-}))
+    return res.json({ products: products.map(serializeProduct) })
+  }),
+)
 
 export default router
