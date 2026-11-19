@@ -2,6 +2,7 @@ import { MongoClient, ServerApiVersion } from 'mongodb'
 
 import { defaultProducts } from '../data/defaultProducts.js'
 import { env } from './env.js'
+import { seedSiteContent } from '../utils/seedSiteContent.js'
 
 let client
 let database
@@ -55,6 +56,7 @@ export async function connectToDatabase() {
     await database.collection('products').createIndex({ slug: 1 }, { unique: true })
 
     await seedProductsIfNeeded(database)
+    await seedSiteContent(database)
 
     console.log(`MongoDB connected successfully to database "${env.dbName}"`)
 

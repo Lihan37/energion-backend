@@ -1,0 +1,361 @@
+{
+  "blogs": [
+    {
+      "id": "blog-01",
+      "slug": "how-electric-bikes-are-changing-city-commutes",
+      "title": "How Electric Bikes Are Changing City Commutes",
+      "excerpt": "Electric mobility is no longer a niche idea. It is becoming the most practical answer to crowded cities, rising fuel costs, and time lost in traffic.",
+      "category": "Guides",
+      "author": "Nadia Rahman",
+      "coverImage": "/images/editorial/city-commuting.webp",
+      "coverAlt": "AI illustration of a helmeted commuter riding a black-and-gold EZ GO EVOX on a tree-lined city street.",
+      "aiIllustration": true,
+      "publishedAt": "2026-04-07",
+      "readTime": "6 min read",
+      "featured": true,
+      "content": [
+        {
+          "heading": "The shift to cleaner daily transport",
+          "paragraphs": [
+            "Cities are becoming denser while roads are not growing at the same speed. For many commuters, that means more waiting, more frustration, and higher fuel costs.",
+            "Electric bikes answer this by cutting through the inefficiency. They lower running costs, shorten many urban trips, and make everyday movement feel lighter instead of exhausting."
+          ]
+        },
+        {
+          "heading": "Why riders stay with e-bikes after switching",
+          "paragraphs": [
+            "Most first-time riders are drawn by convenience, but they stay because the routine changes. Parking becomes simple, small errands become fast, and short commutes stop feeling like wasted time."
+          ],
+          "bullets": [
+            "Lower daily transport cost",
+            "Less dependence on fuel and traffic",
+            "A healthier but less tiring ride experience"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog-02",
+      "slug": "battery-care-tips-for-longer-range-and-better-performance",
+      "title": "Battery Care Tips for Longer Range and Better Performance",
+      "excerpt": "Good battery habits protect range, extend component life, and keep your e-bike ready when your week gets busy.",
+      "category": "Technology",
+      "author": "Imran Hossain",
+      "coverImage": "/images/editorial/battery-care.webp",
+      "coverAlt": "AI illustration of a rider and service advisor inspecting a charging cable beside a parked blue EZ GO NEXO.",
+      "aiIllustration": true,
+      "publishedAt": "2026-03-29",
+      "readTime": "5 min read",
+      "content": [
+        {
+          "heading": "Charge smarter, not just more often",
+          "paragraphs": [
+            "Modern lithium batteries reward consistency. Avoid leaving the bike at a full charge for extended periods in high heat, and use the original charger whenever possible.",
+            "If the bike will sit unused for a while, keep the battery partially charged instead of fully topped up."
+          ]
+        },
+        {
+          "heading": "Everyday range habits",
+          "paragraphs": [
+            "Smooth acceleration, proper tire pressure, and choosing the right assist mode can noticeably improve range during the week without sacrificing ride quality."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blog-03",
+      "slug": "why-dealer-support-matters-when-buying-an-e-bike",
+      "title": "Why Dealer Support Matters When Buying an E-Bike",
+      "excerpt": "A premium electric bike is not only about the frame and motor. Dealer support shapes the ownership experience long after the first ride.",
+      "category": "Company",
+      "author": "Energion Editorial",
+      "coverImage": "/images/editorial/dealer-support.webp",
+      "coverAlt": "AI illustration of a dealer advisor explaining an olive EZ GO Sprinto to a customer in a showroom.",
+      "aiIllustration": true,
+      "publishedAt": "2026-03-12",
+      "readTime": "4 min read",
+      "content": [
+        {
+          "heading": "Service confidence matters",
+          "paragraphs": [
+            "Dealer networks make maintenance simpler, help with updates, and give riders direct access to parts and support. That reduces downtime and builds trust."
+          ]
+        },
+        {
+          "heading": "The ownership layer buyers overlook",
+          "paragraphs": [
+            "The right dealer can guide fit, setup, accessories, and diagnostics. For new riders especially, that guidance is a major part of the value of a premium brand."
+          ]
+        }
+      ]
+    }
+  ],
+  "dealers": [
+    {
+      "id": "dealer-mirpur",
+      "region": "Dhaka Metro",
+      "city": "Mirpur",
+      "showroom": "Outlet Mirpur",
+      "address": "Moddo Pirerbag, Paka Masjhid, Mirpur-60ft, Dhaka"
+    },
+    {
+      "id": "dealer-cumilla-bike-point",
+      "region": "Chittagong",
+      "city": "Cumilla",
+      "showroom": "Cumilla Bike Point",
+      "address": "Haji Mansion, Nishchintapur, Cumilla Cantonment."
+    },
+    {
+      "id": "dealer-taqwa",
+      "region": "Chittagong",
+      "city": "Laxmipur",
+      "showroom": "Taqwa Enterprise",
+      "address": "Chak Bazar, Laxmipur Sadar, Laxmipur."
+    },
+    {
+      "id": "dealer-ishrak",
+      "region": "Chittagong",
+      "city": "Coxbazar",
+      "showroom": "Ishrak Enterprise",
+      "address": "Beside PTI School, Coxbazar"
+    },
+    {
+      "id": "dealer-evergreen",
+      "region": "Rajshahi",
+      "city": "Taherpur",
+      "showroom": "EVERGREEN POWER",
+      "address": "Taherpur College Gate, Taherpur, Rajshahi"
+    },
+    {
+      "id": "dealer-green-target-rajshahi",
+      "region": "Rajshahi",
+      "city": "Rajshahi",
+      "showroom": "Green Target- Rajshahi",
+      "address": "Sagorpara, Boalia, Rajshahi"
+    },
+    {
+      "id": "dealer-green-target-naogaon",
+      "region": "Rajshahi",
+      "city": "Naogaon",
+      "showroom": "Green Target- Naogaon",
+      "address": "Komaigari, Main road, Naogaon"
+    },
+    {
+      "id": "dealer-liyana",
+      "region": "Rajshahi",
+      "city": "Gurudaspur",
+      "showroom": "LIYANA MOTORS",
+      "address": "Dr. Eman City Center, Chanchkoir Bazar, (Beside Horibashor), Main Road, Gurudaspur, Natore."
+    },
+    {
+      "id": "dealer-mm-enterprise",
+      "region": "Rajshahi",
+      "city": "Natore",
+      "showroom": "M M Enterprise",
+      "address": "Chakrampur, Natore Sadar"
+    },
+    {
+      "id": "dealer-sk-family",
+      "region": "Rajshahi",
+      "city": "Chapainawabganj",
+      "showroom": "M/S SK Family",
+      "address": "Hospital Road,Sonar Circle,Chapainawabganj Sadar."
+    },
+    {
+      "id": "dealer-rr-auto",
+      "region": "Rajshahi",
+      "city": "Iswardi",
+      "showroom": "RR Auto Traders",
+      "address": "Infront of Roads & Highway office (micro stand), Pabna road, Iswardi, Pabna."
+    },
+    {
+      "id": "dealer-saad-ev",
+      "region": "Rajshahi",
+      "city": "Chatmohor",
+      "showroom": "Saad EV & Battery House",
+      "address": "Jadris Circle,Notun Bazar, Chatmohor, Pabna"
+    },
+    {
+      "id": "dealer-sheba-auto",
+      "region": "Rajshahi",
+      "city": "Banneshwar",
+      "showroom": "Sheba Auto",
+      "address": "Banneshwar Bazar, Rajshahi"
+    },
+    {
+      "id": "dealer-subaha",
+      "region": "Rajshahi",
+      "city": "Sirajgonj",
+      "showroom": "Subaha EVs",
+      "address": "Bahirgola road, gurer bazar, Sodor, Sirajgonj."
+    },
+    {
+      "id": "dealer-arafat",
+      "region": "Khulna",
+      "city": "Bagerhat",
+      "showroom": "Arafat Motors",
+      "address": "Highway Road New Police Line, Khanka Sorif mor, Ronobijoypur, Bagerhat."
+    },
+    {
+      "id": "dealer-electronic-bazar",
+      "region": "Khulna",
+      "city": "Jessore",
+      "showroom": "ELECTRONIC BAZAR",
+      "address": "Palbari Circle, Doratana Road, Jessore"
+    },
+    {
+      "id": "dealer-jahan",
+      "region": "Khulna",
+      "city": "Jhinaidah",
+      "showroom": "Jahan Auto",
+      "address": "Hamdah traffic signal, Jhinaidah"
+    },
+    {
+      "id": "dealer-js-traders",
+      "region": "Khulna",
+      "city": "Gopalgonj",
+      "showroom": "JS Traders",
+      "address": "Habib Super Market kasiani bus Stand,kasiani Bazar,Gopalgonj"
+    },
+    {
+      "id": "dealer-jx-ride",
+      "region": "Khulna",
+      "city": "Jessore",
+      "showroom": "JX Ride",
+      "address": "Char khambar mor, beside Hotel Orion, Rail road, jessore sador, jessore."
+    },
+    {
+      "id": "dealer-m-traders",
+      "region": "Khulna",
+      "city": "Meherpur",
+      "showroom": "M Traders & Motors",
+      "address": "Bamonpara, Agrani bank, mujebnagor road, meherpur."
+    },
+    {
+      "id": "dealer-rafi",
+      "region": "Khulna",
+      "city": "Kotchandpur",
+      "showroom": "M/S RAFI ENTERPRISE",
+      "address": "Ghospital Road, Kotchandpur, Jhinaidah"
+    },
+    {
+      "id": "dealer-msr-trading",
+      "region": "Khulna",
+      "city": "Jessore",
+      "showroom": "MSR Trading",
+      "address": "Jail Road, Opposite of ASP Circle office, Jessore Sadar, Jessore"
+    },
+    {
+      "id": "dealer-porshi",
+      "region": "Khulna",
+      "city": "Kustia",
+      "showroom": "Porshi Motors",
+      "address": "Shuveccha super Market, Chourhash circle, Kustia"
+    },
+    {
+      "id": "dealer-rong-bahar",
+      "region": "Khulna",
+      "city": "Satkhira",
+      "showroom": "Rong Bahar",
+      "address": "Judge Court er samne, satkhira sador, satkhira."
+    },
+    {
+      "id": "dealer-shimul",
+      "region": "Khulna",
+      "city": "Faridpur",
+      "showroom": "Shimul EV Motors",
+      "address": "Khabashpur, Barishal road, Beside Star Kabab, Faridpur."
+    },
+    {
+      "id": "dealer-sheikh",
+      "region": "Khulna",
+      "city": "Rajbari",
+      "showroom": "Sheikh Motors",
+      "address": "Police Line, Rajbari Sador, Rajbari."
+    },
+    {
+      "id": "dealer-sundarban",
+      "region": "Khulna",
+      "city": "Khulna",
+      "showroom": "Sundarban Motors",
+      "address": "M.A Bari road, Gollamari, Khulna"
+    },
+    {
+      "id": "dealer-happy-ev",
+      "region": "Rangpur",
+      "city": "Dinajpur",
+      "showroom": "Happy EV Motors",
+      "address": "Nimnagar, South Balubari, Dinajpur"
+    },
+    {
+      "id": "dealer-kr-electronics",
+      "region": "Rangpur",
+      "city": "Setabgonj",
+      "showroom": "KR Electronicsg",
+      "address": "Kanchan Chairman’s Showroom, Setabgonj Bazar Circle, Setabgonj, Dinajpur"
+    },
+    {
+      "id": "dealer-somrat",
+      "region": "Rangpur",
+      "city": "Nilphamari",
+      "showroom": "MS SOMRAT BUILDERS",
+      "address": "KESBA, Kishoregonj, Nilphamari"
+    },
+    {
+      "id": "dealer-ovi",
+      "region": "Rangpur",
+      "city": "Lalmonirhat",
+      "showroom": "Ovi Motors",
+      "address": "Mission road, Lalmonirhat"
+    },
+    {
+      "id": "dealer-prantik",
+      "region": "Rangpur",
+      "city": "Rangpur",
+      "showroom": "Prantik Motors & Electrics",
+      "address": "C O Bazar, Sadar, Rangpur."
+    },
+    {
+      "id": "dealer-raka",
+      "region": "Rangpur",
+      "city": "Nawabganj",
+      "showroom": "Raka Enterprise",
+      "address": "Rampur Bazar, Kachdoho Road, Nawabganj, Dinajpur."
+    },
+    {
+      "id": "dealer-fihad-fahim",
+      "region": "Rangpur",
+      "city": "Taraganj",
+      "showroom": "M/S Fihad Fahim Traders",
+      "address": "old chowpothi Gulshan Market, Taraganj, Rangpur"
+    },
+    {
+      "id": "dealer-ecogo",
+      "region": "Rangpur",
+      "city": "Rangpur",
+      "showroom": "ECOGO",
+      "address": "Keranipara Chowrastamor, nasirabad road,Rangpur"
+    },
+    {
+      "id": "dealer-north-star",
+      "region": "Rangpur",
+      "city": "Dinajpur",
+      "showroom": "North Star Motors",
+      "address": "Sahi Mosque road, North Balubari, Dinajpur"
+    },
+    {
+      "id": "dealer-sabbir",
+      "region": "Rangpur",
+      "city": "Thakurgaon",
+      "showroom": "Sabbir Motors",
+      "address": "Opposite of Supriyo Filling Station, Panchagarh road, Thakurgaon"
+    }
+  ],
+  "settings": {
+    "name": "Energion E-Mobility",
+    "tagline": "Premium electric bikes for fast, clean urban motion.",
+    "email": "info@energion-emobility.com",
+    "phone": "01806442201",
+    "address": "Plot-85, Road-133, Gulshan 1, Dhaka-1212"
+  }
+}

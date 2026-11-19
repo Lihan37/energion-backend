@@ -11,6 +11,7 @@ import { errorHandler, notFoundHandler } from './middleware/errorHandlers.js'
 import adminRoutes from './routes/admin.routes.js'
 import authRoutes from './routes/auth.routes.js'
 import productsRoutes from './routes/products.routes.js'
+import { createAdminContentRouter, createPublicContentRouter } from './routes/content.routes.js'
 
 const app = express()
 
@@ -39,6 +40,8 @@ app.get('/api/health', (_req, res) => {
 app.use('/api/auth', authLimiter, authRoutes)
 app.use('/api/products', productsRoutes)
 app.use('/api/admin', adminRoutes)
+app.use('/api/content', createPublicContentRouter())
+app.use('/api/admin/content', createAdminContentRouter())
 
 app.use(notFoundHandler)
 app.use(errorHandler)
